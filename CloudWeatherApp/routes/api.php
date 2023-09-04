@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('city',[Cidades::class,'getMapQuest']);
+Route::get('city',[Cidades::class,'getPrevision']);

@@ -13,7 +13,7 @@ class Cidade extends Model
      * @var string
      */
     protected $table = 'cidades';
-
+    public $timestamps = false;
     /**
      * Os atributos que podem ser atribuídos em massa.
      *
@@ -21,9 +21,15 @@ class Cidade extends Model
      */
     protected $fillable = [
         'nome',
-        'pais',
         'longitude',
-        'latitude'
+        'latitude',
+        'temperatura',
+        'sensacao_termica',
+        'temperatura_maxima',
+        'temperatura_minima',
+        'pressao_termica',
+        'umidade',
+        'porcentagem_de_nuvem'
     ];
 
     /**
