@@ -13,8 +13,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command('update:cities')
-            ->hourly()
-            ->at(0);
+            ->hourlyAt(0);
     }
 
 

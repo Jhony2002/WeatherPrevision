@@ -100,7 +100,8 @@ class CidadesServices
         $registro->temperatura_maxima= $city['tempoMaximo'];
         $registro->pressao_termica= $city['pressao'];
         $registro->umidade= $city['umidade'];
-        $registro->porcentagem_de_nuvem= $city['umidade'];
+        // Save the cloudiness information instead of humidity.
+        $registro->porcentagem_de_nuvem = $city['porcentagemDeNuvem'];
         $registro->ultima_atualizacao= $city['ultimaAtualizacao'];
         $registro->save();
 
